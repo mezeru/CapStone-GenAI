@@ -1,3 +1,7 @@
+```bash
+https://github.com/mezeru/CapStone-GenAI
+```
+
 # AI-Powered Telecom Billing System
 
 ## Overview
