@@ -28,8 +28,8 @@ const generateRandomData = () => {
 };
 
 const customers = generateRandomData();
-fs.writeFileSync('telecom_usage_data.csv', 'CustomerID,MinutesUsed,DataUsedGB,SMSCount,Plan,BillAmount\n');
+fs.writeFileSync('data.csv', 'CustomerID,MinutesUsed,DataUsedGB,SMSCount,Plan,BillAmount\n');
 customers.forEach(customer => {
   const row = `${customer.CustomerID},${customer.MinutesUsed},${customer.DataUsedGB},${customer.SMSCount},${customer.Plan},${customer.BillAmount}\n`;
-  fs.appendFileSync('telecom_usage_data.csv', row);
+  fs.appendFileSync('data.csv', row);
 });
