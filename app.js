@@ -63,8 +63,10 @@ app.post('/total-bill', async (req, res) => {
 app.post('/Outages', async (req, res) => {
 
   try{
+
+    const {region,phoneNumber} = req.body;
     
-    const resp = await checkForOutagesAndNotify(req.body.region, req.body.phoneNumber);
+    const resp = await checkForOutagesAndNotify(region, phoneNumber);
     res.status(200).json(resp)
   }
   catch(e){

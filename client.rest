@@ -32,3 +32,13 @@ content-type: application/json
     "smsCount":200,
     "plan":"premium"
 }
+
+######
+
+POST  http://localhost:3000/Outages HTTP/1.1
+content-type: application/json
+
+{
+    "region": "New York",
+    "phoneNumber": 1234567890
+}
