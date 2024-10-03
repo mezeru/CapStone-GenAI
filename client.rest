@@ -1,0 +1,34 @@
+POST  http://localhost:3000/bill-Summary HTTP/1.1
+content-type: application/json
+
+{
+    "minutes":20000, 
+    "dataUsage":5,
+    "smsCount":200,
+    "plan":"basic"
+}
+
+######
+
+POST  http://localhost:3000/total-bill HTTP/1.1
+content-type: application/json
+
+{
+    "minutes":20000, 
+    "dataUsage":5,
+    "smsCount":200,
+    "plan":"basic"
+}
+
+
+######
+
+POST  http://localhost:3000/predict-bill HTTP/1.1
+content-type: application/json
+
+{
+    "minutesUsed":20000, 
+    "dataUsedGB":5,
+    "smsCount":200,
+    "plan":"premium"
+}
