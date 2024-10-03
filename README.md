@@ -41,3 +41,15 @@ This project implements an **AI-driven Telecom Billing System** that performs th
 
 8. **twilio (v5.3.2)**  
    - Twilio's Node.js SDK, used for sending SMS notifications to customers in case of network outages or bill generation notifications.
+
+9. **jest (v29.6.2)**  
+   - A JavaScript testing framework, used for writing and running unit and integration tests for the billing system, machine learning predictions, API calls, and overall system reliability.
+
+---
+
+### Installation
+
+You can install all the required packages by running:
+
+```bash
+npm install
